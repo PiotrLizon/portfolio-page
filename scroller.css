@@ -1,0 +1,43 @@
+.scroller__navigation {
+  position: fixed;
+  right: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroller__navigation ul {
+  list-style: none;
+}
+
+.scroller__navigation ul li {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.scroller__navigation ul li.active {
+  border: 1vw solid #f5f5dc;
+}
+
+.scroller__navigation ul li+li {
+  margin-top: 2vh;
+}
+
+
+/* small desktop (min-width: 1280px) */
+@media (min-width: 1280px) and (orientation: landscape) {
+  .scroller__navigation {
+    right: 2vw;
+  }
+
+  .scroller__navigation ul li {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+
+  .scroller__navigation ul li.active {
+    border: .25vw solid #f5f5dc;
+  }
+}

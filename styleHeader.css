@@ -1,0 +1,72 @@
+.header {
+    position: relative;
+}
+
+.catcher {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    line-height: .9;
+}
+
+.textHeader {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.start {
+    display: none;
+}
+
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    .catcher {
+        top: 50%;
+        left: 20%;
+        width: 75%;
+        transform: translateY(-50%);
+        line-height: .75;
+    }
+
+    .textHeader {
+        font-size: 2.15em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .start {
+        display: inline-block;
+        position: absolute;
+        top: 27%;
+        left: 14.5%;
+        font-size: 0.4em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 1400px) and (orientation: landscape) {
+    .catcher {
+        width: 65%;
+    }
+
+    .textHeader {
+        font-size: 2.4em;
+    }
+
+}
+
+@media (min-width: 1700px) and (orientation: landscape) {
+    .catcher {
+        width: 65%;
+    }
+
+    .textHeader {
+        font-size: 2.5em;
+    }
+
+}

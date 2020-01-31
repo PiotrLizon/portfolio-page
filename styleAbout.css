@@ -1,0 +1,61 @@
+.about {
+    position: relative;
+}
+
+.about p {
+    position: absolute;
+}
+
+.textAbout {
+    top: 18vh;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about p:nth-child(2) {
+    top: 27vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    font-size: .55em;
+    line-height: .95;
+    text-align: left;
+}
+
+.aboutMe {
+    display: none;
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    .aboutMe {
+        display: inline-block;
+        position: absolute;
+        top: 27%;
+        left: 14.5%;
+        font-size: 0.4em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .textAbout {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        font-size: 2.15em;
+        transition: .2s;
+    }
+
+    .textAbout:hover {
+        transform: translate(-50%, -50%) rotate(90deg) skew(10deg);
+    }
+
+    .about p:nth-child(2) {
+        top: 50%;
+        left: 55%;
+        transform: translateY(-50%);
+        line-height: normal;
+        width: 30%;
+    }
+}

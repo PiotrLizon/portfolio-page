@@ -1,0 +1,81 @@
+.footer {
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 0.55em;
+    text-align: center;
+    line-height: 0.95;
+}
+
+.author {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.4em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    z-index: 2;
+    background-color: #f5f5dc;
+}
+
+footer img {
+    width: 5%;
+    margin-bottom: 2%;
+}
+
+footer p {
+    font-size: 0.4em;
+    font-weight: bold;
+}
+
+.quoteSection {
+    display: none;
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    footer {
+        background-color: transparent;
+        z-index: -1;
+    }
+
+    footer img {
+        width: 2%;
+        margin-bottom: 0.5%;
+    }
+
+    .quote {
+        width: 40%;
+        text-align: left;
+        line-height: normal;
+    }
+
+    .author {
+        top: 55%;
+    }
+
+    .quoteSection {
+        display: inline-block;
+        position: absolute;
+        top: 27%;
+        left: 14.5%;
+        font-size: 0.4em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
